@@ -1,0 +1,47 @@
+{
+  "name": "n8n-nodes-nmap-executor",
+  "version": "1.0.9",
+  "description": "Nmap Executor: Scan ports, detect services, OS and run NSE scripts on a host or IP. Designed for both manual workflows and AI Agent tools in n8n.",
+  "author": "OXSR",
+  "license": "MIT",
+  "keywords": [
+    "n8n",
+    "nmap",
+    "scan",
+    "network",
+    "security",
+    "AI Tool",
+    "AI Agent"
+  ],
+  "homepage": "https://github.com/OXSR/n8n-nodes-nmap-executor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OXSR/n8n-nodes-nmap-executor"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "nodes": [
+      "dist/NmapExecutor.node.js"
+    ],
+    "tool": true,          
+    "aiTool": true         
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.3",
+    "@types/xml2js": "^0.4.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "n8n-workflow": "^1.14.1",
+    "n8n-core": "^1.14.1",
+    "xml2js": "^0.4.23"
+  }
+}
