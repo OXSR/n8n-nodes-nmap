@@ -37,3 +37,6 @@ Perform Nmap scans and get structured results in your automation flows. Perfect 
 **Support this project!**  
 If you find it useful, please give it a ⭐️ or like on npm/GitHub – your support helps us improve!
 
+
+![nmap node OXSR](https://raw.githubusercontent.com/OXSR/n8n-nodes-nmap/main/nmap-node.png)
+
